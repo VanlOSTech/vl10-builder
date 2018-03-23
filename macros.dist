@@ -1,0 +1,10 @@
+# dist macros.
+
+%centos_ver 7
+%centos 7
+%vanlos_ver 7
+%vanlos 7
+%rhel 7
+%dist .vl10
+%el7 1
+%vl10 1
