@@ -2,8 +2,8 @@
 
 %centos_ver 7
 %centos 7
-%vanlos_ver 7
-%vanlos 7
+%vanlos_ver 10
+%vanlos 10
 %rhel 7
 %dist .vl10
 %el7 1
