@@ -14,7 +14,7 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
-RUN yum -y install openssh-server passwd vim gcc gcc-c++ git wget make createrepo; yum clean all; systemctl enable sshd
+RUN yum -y install openssh-server passwd vim gcc gcc-c++ git wget make createrepo python-libcomps; yum clean all; systemctl enable sshd
 RUN mkdir /var/run/sshd && ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' && echo '123456'| passwd --stdin root
 
 ADD macros.dist /etc/rpm/
